@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market - CryptoEx</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="fixed top-0 w-full bg-gray-800 shadow-lg z-50">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-xl font-bold">CryptoEx</div>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="hover:text-blue-400">Beranda</a>
+            <a href="content.html" class="hover:text-blue-400">Market</a>
+            <a href="feedback.html" class="hover:text-blue-400">Feedback</a>
+          </div>
+          <button class="md:hidden" id="mobile-menu-button">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 pb-16">
+      <!-- Market Overview -->
+      <section class="mb-12">
+        <h1 class="text-3xl font-bold mb-8">Market Overview</h1>
+
+        <!-- Market Filter -->
+        <div class="flex flex-wrap gap-4 mb-8">
+          <button class="bg-blue-600 px-6 py-2 rounded-full">Semua</button>
+          <button class="bg-gray-700 px-6 py-2 rounded-full hover:bg-gray-600">
+            DeFi
+          </button>
+          <button class="bg-gray-700 px-6 py-2 rounded-full hover:bg-gray-600">
+            NFT
+          </button>
+          <button class="bg-gray-700 px-6 py-2 rounded-full hover:bg-gray-600">
+            Metaverse
+          </button>
+        </div>
+
+        <!-- Market Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-gray-800">
+              <tr>
+                <th class="px-6 py-3 text-left">Nama</th>
+                <th class="px-6 py-3 text-right">Harga</th>
+                <th class="px-6 py-3 text-right">24h %</th>
+                <th class="px-6 py-3 text-right">7d %</th>
+                <th class="px-6 py-3 text-right">Market Cap</th>
+                <th class="px-6 py-3 text-right">Volume(24h)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-700 hover:bg-gray-800">
+                <td class="px-6 py-4">
+                  <div class="flex items-center">
+                    <img
+                      src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg"
+                      alt="Bitcoin"
+                      class="w-8 h-8 mr-3"
+                    />
+                    <div>
+                      <div class="font-bold">Bitcoin</div>
+                      <div class="text-sm text-gray-400">BTC</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4 text-right">$45,000</td>
+                <td class="px-6 py-4 text-right text-green-500">+5.23%</td>
+                <td class="px-6 py-4 text-right text-red-500">-2.45%</td>
+                <td class="px-6 py-4 text-right">$845.4B</td>
+                <td class="px-6 py-4 text-right">$28.5B</td>
+              </tr>
+              <!-- Add more rows for other cryptocurrencies -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Trading Chart Section -->
+      <section class="bg-gray-800 p-6 rounded-lg">
+        <h2 class="text-2xl font-bold mb-4">Bitcoin (BTC) Chart</h2>
+        <div class="aspect-w-16 aspect-h-9 bg-gray-700 rounded-lg">
+          <!-- Placeholder for trading chart -->
+          <div class="flex items-center justify-center h-96 text-gray-400">
+            Trading Chart akan ditampilkan di sini
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 py-8">
+      <div class="container mx-auto px-6">
+        <p class="text-center text-gray-400">
+          Learning Labs 2024 L0324004 Anton Sulaiman
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

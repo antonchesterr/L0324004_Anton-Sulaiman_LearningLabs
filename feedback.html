@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - CryptoEx</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <header class="fixed top-0 w-full bg-gray-800 shadow-lg z-50">
+      <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-xl font-bold">CryptoEx</div>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="hover:text-blue-400">Beranda</a>
+            <a href="content.html" class="hover:text-blue-400">Market</a>
+            <a href="feedback.html" class="hover:text-blue-400">Feedback</a>
+          </div>
+          <button class="md:hidden" id="mobile-menu-button">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24 pb-16">
+      <section class="max-w-2xl mx-auto">
+        <h1 class="text-3xl font-bold mb-8">Feedback</h1>
+        <form id="feedbackForm" class="space-y-6">
+          <div>
+            <label for="name" class="block mb-2">Nama</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block mb-2">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none"
+            />
+          </div>
+
+          <div>
+            <label for="category" class="block mb-2">Kategori</label>
+            <select
+              id="category"
+              name="category"
+              required
+              class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none"
+            >
+              <option value="">Pilih Kategori</option>
+              <option value="general">Umum</option>
+              <option value="trading">Trading</option>
+              <option value="technical">Teknikal</option>
+              <option value="suggestion">Saran</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block mb-2">Pesan</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 focus:border-blue-500 focus:outline-none"
+            ></textarea>
+          </div>
+
+          <div>
+            <label class="flex items-center">
+              <input type="checkbox" name="subscribe" class="mr-2" />
+              <span>Berlangganan newsletter kami</span>
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded transition duration-300"
+          >
+            Kirim Feedback
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 py-8">
+      <div class="container mx-auto px-6">
+        <p class="text-center text-gray-400">
+          Learning Labs 2024 L0324004 Anton Sulaiman
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
